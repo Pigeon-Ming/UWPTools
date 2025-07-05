@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="UWPTools.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPTools"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView Name="MainNavigationView" SelectionChanged="MainNavigationView_SelectionChanged">
+            <NavigationView.MenuItems>
+                <NavigationViewItemHeader Content="控件"/>
+                <NavigationViewItem Content="文件管理器 ExplorerControl" Tag="ExplorerControl">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE8B7;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+            </NavigationView.MenuItems>
+            <NavigationView.Content>
+                <Frame Name="MainFrame"/>
+            </NavigationView.Content>
+        </NavigationView>
+    </Grid>
+</Page>

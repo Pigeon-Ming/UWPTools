@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="UWPTools.Pages.ControlPages.ExplorerControlPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:UWPTools.Pages.ControlPages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:controls="using:UWPTools.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal">
+            <Button Name="SelectRootFolderButton" Content="选择根文件夹" Click="SelectRootFolderButton_Click"/>
+            <TextBlock VerticalAlignment="Center" Margin="4,0,4,0" Name="RootFolderPath" Text="请选择一个用于浏览的根文件夹"/>
+        </StackPanel>
+        <Grid Name="ControlGrid" Grid.Row="1">
+            
+        </Grid>
+    </Grid>
+</Page>

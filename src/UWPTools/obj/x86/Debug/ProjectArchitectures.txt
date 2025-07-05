@@ -1,0 +1,4 @@
+D:\Projects\UWPTools\UWPTools.Controls\UWPTools.Controls.csproj;x86
+D:\Projects\UWPTools\UWPTools.Models\UWPTools.Models.csproj;x86
+D:\Projects\UWPTools\UWPTools.Models\UWPTools.Models.csproj;x86
+D:\Projects\UWPTools\UWPTools\UWPTools.csproj;x86

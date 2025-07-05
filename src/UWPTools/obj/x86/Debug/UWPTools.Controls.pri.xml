@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="UWPTools.Controls" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="UWPTools.Controls">
+				<NamedResource name="CreateNewFolderControl.xbf" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/CreateNewFolderControl.xbf">
+					<Candidate type="Path">
+						<Value>UWPTools.Controls\CreateNewFolderControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="ExplorerControl.xbf" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/ExplorerControl.xbf">
+					<Candidate type="Path">
+						<Value>UWPTools.Controls\ExplorerControl.xbf</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="UWPTools.Controls.xr.xml" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/UWPTools.Controls.xr.xml">
+					<Candidate type="Path">
+						<Value>UWPTools.Controls\UWPTools.Controls.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="ContentDialogControls">
+					<NamedResource name="RenameStorageItemControl.xbf" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/ContentDialogControls/RenameStorageItemControl.xbf">
+						<Candidate type="Path">
+							<Value>UWPTools.Controls\ContentDialogControls\RenameStorageItemControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+					<NamedResource name="StorageItemPropertiesControl.xbf" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/ContentDialogControls/StorageItemPropertiesControl.xbf">
+						<Candidate type="Path">
+							<Value>UWPTools.Controls\ContentDialogControls\StorageItemPropertiesControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="ItemControls">
+					<NamedResource name="StorageItemPropertyItemControl.xbf" uri="ms-resource://UWPTools.Controls/Files/UWPTools.Controls/ItemControls/StorageItemPropertyItemControl.xbf">
+						<Candidate type="Path">
+							<Value>UWPTools.Controls\ItemControls\StorageItemPropertyItemControl.xbf</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>
