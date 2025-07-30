@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj": {}
+    "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj": {
+    "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj",
+        "projectUniqueName": "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj",
         "projectName": "UWPTools.Models",
-        "projectPath": "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj",
+        "projectPath": "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj",
         "packagesPath": "C:\\Users\\zouqi\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\UWPTools\\UWPTools.Models\\obj\\",
+        "outputPath": "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZRN2hIP4fuU=",
+  "dgSpecHash": "1ZuNcLNM5Eo=",
   "success": true,
-  "projectFilePath": "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj",
+  "projectFilePath": "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zouqi\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\zouqi\\.nuget\\packages\\microsoft.net.native.compiler\\1.7.6\\microsoft.net.native.compiler.1.7.6.nupkg.sha512",

@@ -493,12 +493,12 @@ namespace UWPTools.Controls
             if (RightTabedItem is StorageFile)
             {
                 dataPackage.SetText(((StorageFile)RightTabedItem).Path);
-                Clipboard.SetContent(dataPackage);
+                ClipNavigationBar.SetContent(dataPackage);
             }
             else if (RightTabedItem is StorageFolder)
             {
                 dataPackage.SetText(((StorageFolder)RightTabedItem).Path);
-                Clipboard.SetContent(dataPackage);
+                ClipNavigationBar.SetContent(dataPackage);
             }
         }
 
@@ -506,7 +506,7 @@ namespace UWPTools.Controls
         {
             if (RightTabedItem == null)
             {
-                if (ClipboardItem == null)
+                if (ClipNavigationBarItem == null)
                     ListViewFlyout.Hide();
                 else
                     ListViewFlyout_Open.Visibility = Visibility.Collapsed;
@@ -524,7 +524,7 @@ namespace UWPTools.Controls
                 ListViewFlyout_OpenFilePath.Text = "打开文件夹位置";
             }
 
-            if (ClipboardItem == null)
+            if (ClipNavigationBarItem == null)
             {
                 ListViewFlyout_Paste.Visibility = Visibility.Collapsed;
             }
@@ -537,25 +537,25 @@ namespace UWPTools.Controls
         private void ListViewFlyout_Cut_Click(object sender, RoutedEventArgs e)
         {
             CutMode = true;
-            ClipboardItem = RightTabedItem;
+            ClipNavigationBarItem = RightTabedItem;
         }
 
-        IStorageItem ClipboardItem { get; set; }
+        IStorageItem ClipNavigationBarItem { get; set; }
 
         bool CutMode = false;
 
         private void ListViewFlyout_Copy_Click(object sender, RoutedEventArgs e)
         {
             CutMode = false;
-            ClipboardItem = RightTabedItem;
+            ClipNavigationBarItem = RightTabedItem;
         }
 
         private async void ListViewFlyout_Paste_Click(object sender, RoutedEventArgs e)
         {
             StorageFolder currentFolder = GetFolderOfCurrentView();
-            if (ClipboardItem is StorageFile)
+            if (ClipNavigationBarItem is StorageFile)
             {
-                StorageFile file = (StorageFile)ClipboardItem;
+                StorageFile file = (StorageFile)ClipNavigationBarItem;
                 if (CutMode)
                 {
                     await file.MoveAsync(currentFolder);

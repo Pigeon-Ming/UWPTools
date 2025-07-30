@@ -29706,11 +29706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projects\\UWPTools\\UWPTools.Controls\\UWPTools.Controls.csproj",
+      "projectUniqueName": "D:\\Projects\\UWPTools\\src\\UWPTools.Controls\\UWPTools.Controls.csproj",
       "projectName": "UWPTools.Controls",
-      "projectPath": "D:\\Projects\\UWPTools\\UWPTools.Controls\\UWPTools.Controls.csproj",
+      "projectPath": "D:\\Projects\\UWPTools\\src\\UWPTools.Controls\\UWPTools.Controls.csproj",
       "packagesPath": "C:\\Users\\zouqi\\.nuget\\packages\\",
-      "outputPath": "D:\\Projects\\UWPTools\\UWPTools.Controls\\obj\\",
+      "outputPath": "D:\\Projects\\UWPTools\\src\\UWPTools.Controls\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "UsingMicrosoftNETSdk": false,
@@ -29733,8 +29733,8 @@
       "frameworks": {
         "uap10.0.15063": {
           "projectReferences": {
-            "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj": {
-              "projectPath": "D:\\Projects\\UWPTools\\UWPTools.Models\\UWPTools.Models.csproj"
+            "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj": {
+              "projectPath": "D:\\Projects\\UWPTools\\src\\UWPTools.Models\\UWPTools.Models.csproj"
             }
           }
         }

@@ -38,11 +38,12 @@ namespace UWPTools
         private void MainNavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {
             Type type;
-            if(NavigationDictionary.TryGetValue(((NavigationViewItem)sender.SelectedItem).Tag.ToString(),out type))
+            NavigationViewItem item = (NavigationViewItem)sender.SelectedItem;
+            if (item.Tag != null && NavigationDictionary.TryGetValue(item.Tag.ToString(), out type))
             {
                 MainFrame.Navigate(type);
             }
-            
+
         }
     }
 }

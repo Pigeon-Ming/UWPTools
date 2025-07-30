@@ -1,82 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\UWPTools\\",
+  "WorkspaceRootPath": "D:\\Projects\\UWPTools\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|d:\\projects\\uwptools\\uwptools.controls\\explorercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\explorercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\explorercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\explorercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|D:\\Projects\\UWPTools\\uwptools\\pages\\controlpages\\explorercontrolpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|solutionrelative:uwptools\\pages\\controlpages\\explorercontrolpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|D:\\Projects\\UWPTools\\uwptools\\pages\\controlpages\\explorercontrolpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|solutionrelative:uwptools\\pages\\controlpages\\explorercontrolpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|D:\\Projects\\UWPTools\\uwptools\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|solutionrelative:uwptools\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|D:\\Projects\\UWPTools\\uwptools\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|d:\\projects\\uwptools\\src\\uwptools\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5FE3FC43-52F6-45AA-97BD-3CEA2001734F}|UWPTools\\UWPTools.csproj|solutionrelative:uwptools\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|D:\\Projects\\UWPTools\\uwptools.models\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|solutionrelative:uwptools.models\\settingsmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\createnewfoldercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\createnewfoldercontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\contentdialogcontrols\\renamestorageitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\contentdialogcontrols\\renamestorageitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\itemcontrols\\storageitempropertyitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\itemcontrols\\storageitempropertyitemcontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\itemcontrols\\storageitempropertyitemcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\itemcontrols\\storageitempropertyitemcontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\contentdialogcontrols\\storageitempropertiescontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\contentdialogcontrols\\storageitempropertiescontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|D:\\Projects\\UWPTools\\uwptools.models\\stringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|solutionrelative:uwptools.models\\stringhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\createnewfoldercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\createnewfoldercontrol.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|D:\\Projects\\UWPTools\\uwptools.models\\contentdialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|solutionrelative:uwptools.models\\contentdialogmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\contentdialogcontrols\\storageitempropertiescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\contentdialogcontrols\\storageitempropertiescontrol.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|D:\\Projects\\UWPTools\\uwptools.controls\\models\\viewstorageitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7BA2E62-6618-490E-92ED-F21D59EA3987}|UWPTools.Controls\\UWPTools.Controls.csproj|solutionrelative:uwptools.controls\\models\\viewstorageitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|D:\\Projects\\UWPTools\\uwptools.models\\storagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|solutionrelative:uwptools.models\\storagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|D:\\Projects\\UWPTools\\uwptools.models\\systemhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DF84D5-72CA-487F-8CB9-E0BCAB1DD7AB}|UWPTools.Models\\UWPTools.Models.csproj|solutionrelative:uwptools.models\\systemhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -102,225 +30,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainPage.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools\\MainPage.xaml",
-              "RelativeDocumentMoniker": "UWPTools\\MainPage.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools\\MainPage.xaml",
-              "RelativeToolTip": "UWPTools\\MainPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T05:03:58.131Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MainPage.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools\\MainPage.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools\\MainPage.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools\\MainPage.xaml.cs",
-              "RelativeToolTip": "UWPTools\\MainPage.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowB0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:31:34.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ExplorerControlPage.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml.cs",
-              "RelativeToolTip": "UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAADgvxkAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T05:13:40.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ExplorerControlPage.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml",
-              "RelativeDocumentMoniker": "UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml",
-              "RelativeToolTip": "UWPTools\\Pages\\ControlPages\\ExplorerControlPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T05:12:42.493Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RenameStorageItemControl.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\RenameStorageItemControl.xaml",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ContentDialogControls\\RenameStorageItemControl.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\RenameStorageItemControl.xaml",
-              "RelativeToolTip": "UWPTools.Controls\\ContentDialogControls\\RenameStorageItemControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T04:43:03.205Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateNewFolderControl.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\CreateNewFolderControl.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\CreateNewFolderControl.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\CreateNewFolderControl.xaml.cs",
-              "RelativeToolTip": "UWPTools.Controls\\CreateNewFolderControl.xaml.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAADgvxcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T04:22:31.422Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "CreateNewFolderControl.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\CreateNewFolderControl.xaml",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\CreateNewFolderControl.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\CreateNewFolderControl.xaml",
-              "RelativeToolTip": "UWPTools.Controls\\CreateNewFolderControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T04:21:50.073Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "StringHelper.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Models\\StringHelper.cs",
-              "RelativeDocumentMoniker": "UWPTools.Models\\StringHelper.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Models\\StringHelper.cs",
-              "RelativeToolTip": "UWPTools.Models\\StringHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:46:07.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "StorageItemPropertyItemControl.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml.cs",
-              "RelativeToolTip": "UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAvwBUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:45:30.145Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "StorageItemPropertyItemControl.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml",
-              "RelativeToolTip": "UWPTools.Controls\\ItemControls\\StorageItemPropertyItemControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T03:45:16.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "StorageItemPropertiesControl.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml.cs",
-              "RelativeToolTip": "UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADgAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:43:50.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "StorageItemPropertiesControl.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml",
-              "RelativeToolTip": "UWPTools.Controls\\ContentDialogControls\\StorageItemPropertiesControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T03:43:14.795Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ContentDialogManager.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Models\\ContentDialogManager.cs",
-              "RelativeDocumentMoniker": "UWPTools.Models\\ContentDialogManager.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Models\\ContentDialogManager.cs",
-              "RelativeToolTip": "UWPTools.Models\\ContentDialogManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:41:57.652Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ExplorerControl.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ExplorerControl.xaml.cs",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ExplorerControl.xaml.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ExplorerControl.xaml.cs",
-              "RelativeToolTip": "UWPTools.Controls\\ExplorerControl.xaml.cs",
-              "ViewState": "AgIAAPcBAAAAAAAAAAAgwAACAAANAAAAAAAAAA==",
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "D:\\Projects\\UWPTools\\src\\UWPTools\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "UWPTools\\MainPage.xaml.cs",
+              "ToolTip": "D:\\Projects\\UWPTools\\src\\UWPTools\\MainPage.xaml.cs",
+              "RelativeToolTip": "UWPTools\\MainPage.xaml.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCwAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:38:09.244Z",
+              "WhenOpened": "2025-07-01T05:31:34.139Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ViewStorageItem.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\Models\\ViewStorageItem.cs",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\Models\\ViewStorageItem.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\Models\\ViewStorageItem.cs",
-              "RelativeToolTip": "UWPTools.Controls\\Models\\ViewStorageItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:37:46.178Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ExplorerControl.xaml",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ExplorerControl.xaml",
-              "RelativeDocumentMoniker": "UWPTools.Controls\\ExplorerControl.xaml",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Controls\\ExplorerControl.xaml",
-              "RelativeToolTip": "UWPTools.Controls\\ExplorerControl.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-07-01T03:06:12.692Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "StorageHelper.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Models\\StorageHelper.cs",
-              "RelativeDocumentMoniker": "UWPTools.Models\\StorageHelper.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Models\\StorageHelper.cs",
-              "RelativeToolTip": "UWPTools.Models\\StorageHelper.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAUwBIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T03:03:42.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "SystemHelper.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Models\\SystemHelper.cs",
-              "RelativeDocumentMoniker": "UWPTools.Models\\SystemHelper.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Models\\SystemHelper.cs",
-              "RelativeToolTip": "UWPTools.Models\\SystemHelper.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:07:37.234Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SettingsManager.cs",
-              "DocumentMoniker": "D:\\Projects\\UWPTools\\UWPTools.Models\\SettingsManager.cs",
-              "RelativeDocumentMoniker": "UWPTools.Models\\SettingsManager.cs",
-              "ToolTip": "D:\\Projects\\UWPTools\\UWPTools.Models\\SettingsManager.cs",
-              "RelativeToolTip": "UWPTools.Models\\SettingsManager.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAvwC4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-01T02:04:30.785Z"
             }
           ]
         }
