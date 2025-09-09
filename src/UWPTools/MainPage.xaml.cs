@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using UWPTools.Models;
+using UWPTools.Pages.ClassPages;
 using UWPTools.Pages.ControlPages;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -32,7 +33,8 @@ namespace UWPTools
 
         Dictionary<string, Type> NavigationDictionary = new Dictionary<string, Type>()
         {
-            {"ExplorerControl",typeof(ExplorerControlPage)}
+            {"ExplorerControl",typeof(ExplorerControlPage) },
+            {"HttpRequestHelper",typeof(HttpRequestHelperPage)}
         };
 
         private void MainNavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)

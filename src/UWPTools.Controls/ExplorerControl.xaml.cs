@@ -493,12 +493,12 @@ namespace UWPTools.Controls
             if (RightTabedItem is StorageFile)
             {
                 dataPackage.SetText(((StorageFile)RightTabedItem).Path);
-                ClipNavigationBar.SetContent(dataPackage);
+                Clipboard.SetContent(dataPackage);
             }
             else if (RightTabedItem is StorageFolder)
             {
                 dataPackage.SetText(((StorageFolder)RightTabedItem).Path);
-                ClipNavigationBar.SetContent(dataPackage);
+                Clipboard.SetContent(dataPackage);
             }
         }
 
