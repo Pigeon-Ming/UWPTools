@@ -474,7 +474,11 @@ namespace UWPTools.Controls
 
         private async void ListViewFlyout_OpenFilePath_Click(object sender, RoutedEventArgs e)
         {
-            if (RightTabedItem is StorageFile)
+            if (RightTabedItem == null)
+            {
+                await Launcher.LaunchFolderAsync(GetFolderOfCurrentView());
+            }
+            else if (RightTabedItem is StorageFile)
             {
                 StorageFile file = ((StorageFile)RightTabedItem);
                 string str = file.Path.Substring(0, file.Path.Length - file.Name.Length);
@@ -490,7 +494,12 @@ namespace UWPTools.Controls
         private void ListViewFlyout_CopyFilePath_Click(object sender, RoutedEventArgs e)
         {
             DataPackage dataPackage = new DataPackage();
-            if (RightTabedItem is StorageFile)
+            if(RightTabedItem == null)
+            {
+                dataPackage.SetText((GetFolderOfCurrentView()).Path);
+                Clipboard.SetContent(dataPackage);
+            }
+            else if (RightTabedItem is StorageFile)
             {
                 dataPackage.SetText(((StorageFile)RightTabedItem).Path);
                 Clipboard.SetContent(dataPackage);
@@ -506,10 +515,7 @@ namespace UWPTools.Controls
         {
             if (RightTabedItem == null)
             {
-                if (ClipNavigationBarItem == null)
-                    ListViewFlyout.Hide();
-                else
-                    ListViewFlyout_Open.Visibility = Visibility.Collapsed;
+                ListViewFlyout_Open.Visibility = Visibility.Collapsed;
             }
             else
             {
@@ -519,7 +525,7 @@ namespace UWPTools.Controls
             {
                 ListViewFlyout_OpenFilePath.Text = "打开文件位置";
             }
-            else if (RightTabedItem is StorageFolder)
+            else if (RightTabedItem is StorageFolder || RightTabedItem == null)
             {
                 ListViewFlyout_OpenFilePath.Text = "打开文件夹位置";
             }
@@ -635,7 +641,15 @@ namespace UWPTools.Controls
 
         private async void ListViewFlyout_Properties_Click(object sender, RoutedEventArgs e)
         {
-            StorageItemPropertiesControl control = new StorageItemPropertiesControl(RightTabedItem);
+            StorageItemPropertiesControl control;
+            if (RightTabedItem != null)
+            {
+                control = new StorageItemPropertiesControl(RightTabedItem);
+            }
+            else
+            {
+                control = new StorageItemPropertiesControl(GetFolderOfCurrentView());
+            }
             control.CancelButton.Click += (a, b) =>
             {
                 ContentDialogManager.HideContentDialog();

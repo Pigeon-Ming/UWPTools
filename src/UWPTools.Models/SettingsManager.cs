@@ -12,9 +12,9 @@ namespace UWPTools.Models
     {
         public static ApplicationDataContainer UserSettings;
 
-        public static void InitUserSettings()
+        public static void InitUserSettings(ApplicationDataContainer applicationDataContainer)
         {
-            UserSettings = ApplicationData.Current.LocalSettings;
+            UserSettings = applicationDataContainer;
             //InitSettings();
         }
 
@@ -43,6 +43,8 @@ namespace UWPTools.Models
 
         public static string GetSettingContentAsString(string key)
         {
+            if (UserSettings == null || UserSettings.Values == null)
+                return null;
             object value;
             if (UserSettings.Values.TryGetValue(key, out value))
                 return value.ToString();

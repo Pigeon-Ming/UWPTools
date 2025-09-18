@@ -8,7 +8,7 @@ namespace UWPTools.Models
 {
     public class StringHelper
     {
-        public static string GetURLFromURLWithQueryParmeters(string url)
+        public static string GetURLFromURLWithQueryParameters(string url)
         {
             int queryIndex = url.IndexOf('?');
             if (queryIndex == -1)

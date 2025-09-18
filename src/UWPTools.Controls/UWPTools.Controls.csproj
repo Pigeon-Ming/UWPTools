@@ -129,6 +129,9 @@
     <Compile Include="CreateNewFolderControl.xaml.cs">
       <DependentUpon>CreateNewFolderControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="DevToolsControl.xaml.cs">
+      <DependentUpon>DevToolsControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ExplorerControl.xaml.cs">
       <DependentUpon>ExplorerControl.xaml</DependentUpon>
     </Compile>
@@ -154,6 +157,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CreateNewFolderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DevToolsControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

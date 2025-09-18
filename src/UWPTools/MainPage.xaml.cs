@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using UWPTools.Controls;
 using UWPTools.Models;
 using UWPTools.Pages.ClassPages;
 using UWPTools.Pages.ControlPages;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -28,13 +30,16 @@ namespace UWPTools
         public MainPage()
         {
             this.InitializeComponent();
-            SettingsManager.InitUserSettings();
+            SettingsManager.InitUserSettings(ApplicationData.Current.LocalSettings);
         }
 
         Dictionary<string, Type> NavigationDictionary = new Dictionary<string, Type>()
         {
             {"ExplorerControl",typeof(ExplorerControlPage) },
-            {"HttpRequestHelper",typeof(HttpRequestHelperPage)}
+            {"DevToolsControl",typeof(DevToolsControlPage)},
+            {"HttpRequestHelper",typeof(HttpRequestHelperPage)},
+            {"SQLiteConnection",typeof(SQLiteConnectionPage)},
+            
         };
 
         private void MainNavigationView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
