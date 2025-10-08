@@ -43,7 +43,7 @@ namespace UWPTools.Controls
 
         async Task InitAsync()
         {
-            if (!await StorageHelper.IsItemExsitAsync(ApplicationData.Current.LocalFolder,"MyDataBase.db"))
+            if (!await StorageHelper.IsItemExistAsync(ApplicationData.Current.LocalFolder,"MyDataBase.db"))
             {
                 await ApplicationData.Current.LocalFolder.CreateFileAsync("MyDataBase.db");
             }
@@ -71,7 +71,7 @@ namespace UWPTools.Controls
             }
             else
             {
-                if(await StorageHelper.IsItemExsitAsync(ApplicationData.Current.TemporaryFolder, dbFile.Name))
+                if(await StorageHelper.IsItemExistAsync(ApplicationData.Current.TemporaryFolder, dbFile.Name))
                 {
                     StorageFile file = await ApplicationData.Current.TemporaryFolder.GetFileAsync(dbFile.Name);
                     await file.DeleteAsync();

@@ -76,7 +76,8 @@ namespace UWPTools.Models
                     command.Parameters.AddRange(parameters);
                 }
                 var result = await command.ExecuteScalarAsync();
-                return result == DBNull.Value ? default : (T)Convert.ChangeType(result, typeof(T));
+
+                return result == DBNull.Value ? default(T) : (T)Convert.ChangeType(result, typeof(T));
             }
         }
 
@@ -99,7 +100,7 @@ namespace UWPTools.Models
                 }
                 using (var reader = await command.ExecuteReaderAsync())
                 {
-                    return await reader.ReadAsync() ? mapFunc(reader) : default;
+                    return await reader.ReadAsync() ? mapFunc(reader) : default(T);
                 }
             }
         }
