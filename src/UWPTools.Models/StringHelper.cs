@@ -140,7 +140,7 @@ namespace UWPTools.Models
             return str.Replace("/", "").Replace("\\", "").Replace("*", "").Replace("?", "").Replace(":", "").Replace("|", "").Replace("\"", "").Replace("<", "").Replace(">", "");
         }
 
-        public static TimeSpan ConvertToTimeSpan(string timeString)
+        public static TimeSpan ConvertLRCTimeToTimeSpan(string timeString)
         {
             // 检查输入字符串是否为空或者无效
             if (string.IsNullOrEmpty(timeString))
@@ -181,6 +181,36 @@ namespace UWPTools.Models
 
             // 创建并返回TimeSpan对象
             return new TimeSpan(0, 0, minutes, seconds, milliseconds);
+        }
+
+        public static TimeSpan ConvertMinuteAndSecondTimeToTimeSpan(string timeString)
+        {
+            // 检查输入字符串是否为空或者无效
+            if (string.IsNullOrEmpty(timeString))
+            {
+                throw new ArgumentNullException(nameof(timeString), "输入字符串不能为空");
+            }
+
+            // 按冒号分割分钟和秒.毫秒部分
+            string[] parts = timeString.Split(':');
+            if (parts.Length != 2)
+            {
+                throw new FormatException("输入字符串格式应为'分钟:秒'");
+            }
+
+            // 尝试解析分钟部分
+            if (!int.TryParse(parts[0], out int minutes))
+            {
+                throw new FormatException("分钟部分解析失败");
+            }
+
+            // 尝试解析秒部分
+            if (!int.TryParse(parts[1], out int seconds))
+            {
+                throw new FormatException("秒部分解析失败");
+            }
+
+            return new TimeSpan(0, 0, minutes, seconds);
         }
     }
 }
