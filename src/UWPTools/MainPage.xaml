@@ -22,6 +22,11 @@
                         <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE8B7;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem Content="弹窗控件 ToastControl" Tag="ToastControl">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE91C;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemHeader Content="工具类"/>
                 <NavigationViewItem Content="Http请求帮助类 HttpRequestHelper" Tag="HttpRequestHelper">
                     <NavigationViewItem.Icon>
