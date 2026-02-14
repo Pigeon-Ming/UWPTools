@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -13,16 +14,54 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using static System.Net.WebRequestMethods;
 
 //https://go.microsoft.com/fwlink/?LinkId=234236 上介绍了“用户控件”项模板
 
 namespace UWPTools.Controls
 {
+    public class ToastData : INotifyPropertyChanged
+    {
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        private string title;
+        public string Title { get { return title; }  set  { title = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Title"));PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("TitleVisibility"));} }
+
+        public Visibility TitleVisibility
+        {
+            get { return string.IsNullOrEmpty(Title) ? Visibility.Collapsed : Visibility.Visible; }
+        }
+
+        private string content;
+
+        public string Content { get { return content; } set {  content = value;  PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("Content"));  PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ContentVisibility")); } }
+
+        public Visibility ContentVisibility
+        {
+            get { return string.IsNullOrEmpty(Content) ? Visibility.Collapsed : Visibility.Visible; }
+        }
+
+        private int progressValue { get { return progressValue; } set { progressValue = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ProgressValue")); PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ProgressVisibility")); } } 
+
+        public int ProgressValue { get; set; } = -1;
+
+        public Visibility ProgressBarVisibility
+        {
+            get { return ProgressValue == -1 ? Visibility.Collapsed : Visibility.Visible; }
+        }
+
+        private int progressMaximum;
+
+        public int ProgressMaximum { get { return progressMaximum; } set { progressMaximum = value; PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("ProgressMaximum")); } }
+    }
+
     public sealed partial class ToastControl : UserControl
     {
         private Popup popup;
 
         private int duration;
+
+        //ToastData toastData;
 
         public ToastControl()
         {
@@ -46,21 +85,16 @@ namespace UWPTools.Controls
 
         public void Show(string title, string content, int duration)
         {
-            TitleTextBlock.Text = title;
-            TitleTextBlock.Visibility = Visibility.Visible;
-            ContentTextBlock.Text = content;
-            ContentTextBlock.Visibility = Visibility.Visible;
-            ProgressBar.Visibility = Visibility.Collapsed;
+            toastData.Title = title;
+            toastData.Content = content;
             this.duration = duration;
             Show();
         }
 
         public void Show(string content, int duration)
         {
-            ContentTextBlock.Text = content;
-            ContentTextBlock.Visibility = Visibility.Visible;
-            TitleTextBlock.Visibility = Visibility.Collapsed;
-            ProgressBar.Visibility = Visibility.Collapsed;
+            toastData.Title = null;
+            toastData.Content = content;
             this.duration = duration;
             Show();
         }

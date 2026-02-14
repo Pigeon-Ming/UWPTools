@@ -134,6 +134,9 @@
     <Compile Include="Pages\ControlPages\ExplorerControlPage.xaml.cs">
       <DependentUpon>ExplorerControlPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\ControlPages\ImageViewerControlPage.xaml.cs">
+      <DependentUpon>ImageViewerControlPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\ControlPages\ToastControlPage.xaml.cs">
       <DependentUpon>ToastControlPage.xaml</DependentUpon>
     </Compile>
@@ -176,6 +179,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\ControlPages\ExplorerControlPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ControlPages\ImageViewerControlPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

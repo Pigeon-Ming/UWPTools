@@ -2,97 +2,140 @@
     x:Class="UWPTools.Controls.SQLiteConnectionPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UWPTools.Controls"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:UWPTools.Controls"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
     <Page.Resources>
         <Style TargetType="TextBox">
-            <Setter Property="FontFamily" Value="Cascadia Mono"/>
-            <Setter Property="IsSpellCheckEnabled" Value="False"/>
-            <Setter Property="AcceptsReturn" Value="True"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono" />
+            <Setter Property="IsSpellCheckEnabled" Value="False" />
+            <Setter Property="AcceptsReturn" Value="True" />
         </Style>
     </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition/>
-            <RowDefinition/>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
-        <TextBox Name="SQLTextBox" PlaceholderText="要执行的SQL语句……"/>
+        <TextBox Name="SQLTextBox" PlaceholderText="要执行的SQL语句……" />
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <ScrollViewer>
                 <StackPanel>
-                    <Button Content="打开文件" Name="OpenFileButton" Click="OpenFileButton_Click"/>
-                    <TextBlock Text="请选择一个数据库文件……&#13;（注意，因UWP沙箱机制的限制UWP内置的SQLite无法直接操作打开的文件，所以UWPTools会为打开的文件在内部临时文件夹创建一个副本，后续所有操作都将在创建的副本中进行）" TextWrapping="WrapWholeWords" Name="FilePathTextBlock"/>
-                    <Grid Height="16"/>
-                    <Button Content="在文件管理器中显示当前操作的文件" Name="OpenFileInExplorerButton" IsEnabled="{Binding ElementName=ExecuteNonQueryButton,Path=IsEnabled}" Click="OpenFileInExplorerButton_Click"/>
-                    <Button Content="执行无返回值SQL" Name="ExecuteNonQueryButton" IsEnabled="False" Click="ExecuteNonQueryButton_Click"/>
-                    <Button Content="执行单值查询" Name="ExecuteScalarButton" IsEnabled="{Binding ElementName=ExecuteNonQueryButton,Path=IsEnabled}" Click="ExecuteScalarButton_Click"/>
-                    <Button Content="执行查询（返回单个实体）" Name="QuerySingleButton" IsEnabled="{Binding ElementName=ExecuteNonQueryButton,Path=IsEnabled}" Click="QuerySingleButton_Click"/>
-                    <Button Content="执行查询（返回实体列表）" Name="QueryListButton" IsEnabled="{Binding ElementName=ExecuteNonQueryButton,Path=IsEnabled}" Click="QueryListButton_Click"/>
-                    <Button Content="分页查询（返回分页实体列表）" IsEnabled="{Binding ElementName=ExecuteNonQueryButton,Path=IsEnabled}">
+                    <Button
+                        Name="OpenFileButton"
+                        Click="OpenFileButton_Click"
+                        Content="打开文件" />
+                    <TextBlock
+                        Name="FilePathTextBlock"
+                        Text="请选择一个数据库文件……&#13;（注意，因UWP沙箱机制的限制UWP内置的SQLite无法直接操作打开的文件，所以UWPTools会为打开的文件在内部临时文件夹创建一个副本，后续所有操作都将在创建的副本中进行）"
+                        TextWrapping="WrapWholeWords" />
+                    <Grid Height="16" />
+                    <Button
+                        Name="OpenFileInExplorerButton"
+                        Click="OpenFileInExplorerButton_Click"
+                        Content="在文件管理器中显示当前操作的文件"
+                        IsEnabled="{Binding ElementName=ExecuteNonQueryButton, Path=IsEnabled}" />
+                    <Button
+                        Name="ExecuteNonQueryButton"
+                        Click="ExecuteNonQueryButton_Click"
+                        Content="执行无返回值SQL"
+                        IsEnabled="False" />
+                    <Button
+                        Name="ExecuteScalarButton"
+                        Click="ExecuteScalarButton_Click"
+                        Content="执行单值查询"
+                        IsEnabled="{Binding ElementName=ExecuteNonQueryButton, Path=IsEnabled}" />
+                    <Button
+                        Name="QuerySingleButton"
+                        Click="QuerySingleButton_Click"
+                        Content="执行查询（返回单个实体）"
+                        IsEnabled="{Binding ElementName=ExecuteNonQueryButton, Path=IsEnabled}" />
+                    <Button
+                        Name="QueryListButton"
+                        Click="QueryListButton_Click"
+                        Content="执行查询（返回实体列表）"
+                        IsEnabled="{Binding ElementName=ExecuteNonQueryButton, Path=IsEnabled}" />
+                    <Button Content="分页查询（返回分页实体列表）" IsEnabled="{Binding ElementName=ExecuteNonQueryButton, Path=IsEnabled}">
                         <Button.Flyout>
                             <Flyout>
                                 <Grid>
                                     <Grid.Resources>
                                         <Style TargetType="TextBlock">
-                                            <Setter Property="VerticalAlignment" Value="Center"/>
+                                            <Setter Property="VerticalAlignment" Value="Center" />
                                         </Style>
                                     </Grid.Resources>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="auto"/>
-                                        <ColumnDefinition/>
+                                        <ColumnDefinition Width="auto" />
+                                        <ColumnDefinition />
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
                                     </Grid.RowDefinitions>
-                                    <TextBlock Text="排序字段" Grid.Row="0"/>
-                                    <TextBox Name="OrderFieldTextBox" Grid.Row="0" Grid.Column="1"/>
-                                    <TextBlock Text="页码" Grid.Row="1"/>
-                                    <TextBox Name="PageIndexTextBox" Text="1" Grid.Row="1" Grid.Column="1"/>
-                                    <TextBlock Text="每页记录数" Grid.Row="2"/>
-                                    <TextBox Name="PageSizeTextBox" Text="10" Grid.Row="2" Grid.Column="1"/>
-                                    <Button Content="查询" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Name="QueryByPageButton" Click="QueryByPageButton_Click"/>
+                                    <TextBlock Grid.Row="0" Text="排序字段" />
+                                    <TextBox
+                                        Name="OrderFieldTextBox"
+                                        Grid.Row="0"
+                                        Grid.Column="1" />
+                                    <TextBlock Grid.Row="1" Text="页码" />
+                                    <TextBox
+                                        Name="PageIndexTextBox"
+                                        Grid.Row="1"
+                                        Grid.Column="1"
+                                        Text="1" />
+                                    <TextBlock Grid.Row="2" Text="每页记录数" />
+                                    <TextBox
+                                        Name="PageSizeTextBox"
+                                        Grid.Row="2"
+                                        Grid.Column="1"
+                                        Text="10" />
+                                    <Button
+                                        Name="QueryByPageButton"
+                                        Grid.Row="3"
+                                        Grid.ColumnSpan="2"
+                                        HorizontalAlignment="Stretch"
+                                        Click="QueryByPageButton_Click"
+                                        Content="查询" />
                                 </Grid>
                             </Flyout>
                         </Button.Flyout>
                     </Button>
                     <RichTextBlock>
                         <Paragraph>
-                            <LineBreak/>
-                            使用JSON配置数据实体类：
-                            <LineBreak/>
-                            {
-                            <LineBreak/>
-                            "Id": "UserId",
-                            <LineBreak/>
-                            "Name": "UserName",
-                            <LineBreak/>
-                            "Age": "UserAge",
-                            <LineBreak/>
-                            "RegisterTime": "RegTime"
-                            <LineBreak/>
-                            }
-                            <LineBreak/>
+                            <LineBreak />
+                            使用JSON配置数据实体类：<LineBreak />
+                            {<LineBreak />
+                            "Id": "UserId",<LineBreak />
+                            "Name": "UserName",<LineBreak />
+                            "Age": "UserAge",<LineBreak />
+                            "RegisterTime": "RegTime"<LineBreak />
+                            }<LineBreak />
                         </Paragraph>
 
                     </RichTextBlock>
                 </StackPanel>
-                
+
             </ScrollViewer>
 
 
-            <TextBox Name="DataClassJsonTextBox" Grid.Column="1" PlaceholderText="实体类JSON配置（在这里配置实体类的映射结构）"/>
+            <TextBox
+                Name="DataClassJsonTextBox"
+                Grid.Column="1"
+                PlaceholderText="实体类JSON配置（在这里配置实体类的映射结构）" />
         </Grid>
-        <TextBox Grid.Row="2" Name="ConsoleTextBox" PlaceholderText="查询控制台" IsReadOnly="True"/>
+        <TextBox
+            Name="ConsoleTextBox"
+            Grid.Row="2"
+            IsReadOnly="True"
+            PlaceholderText="查询控制台" />
     </Grid>
 </Page>

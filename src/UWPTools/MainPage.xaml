@@ -2,16 +2,16 @@
     x:Class="UWPTools.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:UWPTools"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:UWPTools"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
 
     <Grid>
         <NavigationView Name="MainNavigationView" SelectionChanged="MainNavigationView_SelectionChanged">
             <NavigationView.MenuItems>
-                <NavigationViewItemHeader Content="控件"/>
+                <NavigationViewItemHeader Content="控件" />
                 <NavigationViewItem Content="文件管理器 ExplorerControl" Tag="ExplorerControl">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE8B7;" />
@@ -27,7 +27,12 @@
                         <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE91C;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
-                <NavigationViewItemHeader Content="工具类"/>
+                <NavigationViewItem Content="图片查看控件 ImageViewerControl" Tag="ImageViewerControl">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE91C;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemHeader Content="工具类" />
                 <NavigationViewItem Content="Http请求帮助类 HttpRequestHelper" Tag="HttpRequestHelper">
                     <NavigationViewItem.Icon>
                         <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE945;" />
@@ -40,7 +45,7 @@
                 </NavigationViewItem>
             </NavigationView.MenuItems>
             <NavigationView.Content>
-                <Frame Name="MainFrame"/>
+                <Frame Name="MainFrame" />
             </NavigationView.Content>
         </NavigationView>
     </Grid>

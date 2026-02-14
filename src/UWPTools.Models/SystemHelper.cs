@@ -3,24 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.Devices.Enumeration;
+using Windows.Security.ExchangeActiveSyncProvisioning;
 using Windows.System.Profile;
 
 namespace UWPTools.Models
 {
+    public enum DeviceFormFactorType
+    {
+        Phone,
+        Desktop,
+        Tablet,
+        IoT,
+        SurfaceHub,
+        Xbox,
+        Holographic,
+        Other
+    }
+
     public class SystemHelper
     {
-        public enum DeviceFormFactorType
-        {
-            Phone,
-            Desktop,
-            Tablet,
-            IoT,
-            SurfaceHub,
-            Xbox,
-            Holographic,
-            Other
-        }
-
         public static DeviceFormFactorType GetDeviceFormFactorType()
         {
             switch (AnalyticsInfo.VersionInfo.DeviceFamily)
@@ -31,6 +33,8 @@ namespace UWPTools.Models
                     return DeviceFormFactorType.Desktop; //UIViewSettings.GetForCurrentView().UserInteractionMode == UserInteractionMode.Mouse
                                                          //    ? DeviceFormFactorType.Desktop
                                                          //    : DeviceFormFactorType.Tablet;
+                case "Windows.Tablet":
+                    return DeviceFormFactorType.Tablet;
                 case "Windows.IoT":
                     return DeviceFormFactorType.IoT;
                 case "Windows.Team":
@@ -42,6 +46,17 @@ namespace UWPTools.Models
                 default:
                     return DeviceFormFactorType.Other;
             }
+        }
+
+        public static string GetWindowsVersion()
+        {
+            string sv = AnalyticsInfo.VersionInfo.DeviceFamilyVersion;
+            ulong v = ulong.Parse(sv);
+            ulong v1 = (v & 0xFFFF000000000000L) >> 48;
+            ulong v2 = (v & 0x0000FFFF00000000L) >> 32;
+            ulong v3 = (v & 0x00000000FFFF0000L) >> 16;
+            ulong v4 = (v & 0x000000000000FFFFL);
+            return $"{v1}.{v2}.{v3}.{v4}";
         }
     }
 }

@@ -40,6 +40,7 @@ namespace UWPTools
             {"HttpRequestHelper",typeof(HttpRequestHelperPage)},
             {"SQLiteConnection",typeof(SQLiteConnectionPage)},
             {"ToastControl",typeof(ToastControlPage)},
+            {"ImageViewerControl",typeof(ImageViewerControlPage)},
             
         };
 
