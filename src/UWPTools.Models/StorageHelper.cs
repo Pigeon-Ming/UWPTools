@@ -350,5 +350,9 @@ namespace UWPTools.Models
             return (await externalDevices.GetFoldersAsync()).ToList();
         }
 
+        public static string RemoveIllegalCharacter(String str)
+        {
+            return str.Replace("/", "").Replace("\\", "").Replace("*", "").Replace("?", "").Replace(":", "").Replace("|", "").Replace("\"", "").Replace("<", "").Replace(">", "");
+        }
     }
 }
