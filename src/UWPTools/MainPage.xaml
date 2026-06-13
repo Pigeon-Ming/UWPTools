@@ -32,6 +32,11 @@
                         <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE91C;" />
                     </NavigationViewItem.Icon>
                 </NavigationViewItem>
+                <NavigationViewItem Content="手柄命令栏 GamepadCommandBar" Tag="GamepadCommandBar">
+                    <NavigationViewItem.Icon>
+                        <FontIcon FontFamily="{ThemeResource SymbolThemeFontFamily}" Glyph="&#xE7FC;" />
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
                 <NavigationViewItemHeader Content="工具类" />
                 <NavigationViewItem Content="Http请求帮助类 HttpRequestHelper" Tag="HttpRequestHelper">
                     <NavigationViewItem.Icon>

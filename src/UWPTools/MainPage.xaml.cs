@@ -41,6 +41,7 @@ namespace UWPTools
             {"SQLiteConnection",typeof(SQLiteConnectionPage)},
             {"ToastControl",typeof(ToastControlPage)},
             {"ImageViewerControl",typeof(ImageViewerControlPage)},
+            {"GamepadCommandBar",typeof(GamepadCommandBarPage)},
             
         };
 

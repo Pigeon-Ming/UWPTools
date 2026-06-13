@@ -1,0 +1,35 @@
+namespace UWPTools.Controls
+{
+    public enum GamepadCommandBarButton
+    {
+        None,
+        A,
+        B,
+        X,
+        Y,
+        DPadUp,
+        DPadDown,
+        DPadLeft,
+        DPadRight,
+        LeftShoulder,
+        RightShoulder,
+        LeftTrigger,
+        RightTrigger,
+        View,
+        Menu,
+        LeftThumbstickButton,
+        RightThumbstickButton,
+        LeftThumbstickUp,
+        LeftThumbstickDown,
+        LeftThumbstickLeft,
+        LeftThumbstickRight,
+        RightThumbstickUp,
+        RightThumbstickDown,
+        RightThumbstickLeft,
+        RightThumbstickRight,
+        Paddle1,
+        Paddle2,
+        Paddle3,
+        Paddle4
+    }
+}

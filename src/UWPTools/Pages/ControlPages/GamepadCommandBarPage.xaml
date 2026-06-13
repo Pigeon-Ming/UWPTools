@@ -1,0 +1,67 @@
+<Page
+    x:Class="UWPTools.Pages.ControlPages.GamepadCommandBarPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:controls="using:UWPTools.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:UWPTools.Pages.ControlPages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackPanel
+            Padding="24"
+            Spacing="12">
+            <TextBlock
+                Style="{ThemeResource TitleTextBlockStyle}"
+                Text="GamepadCommandBar" />
+            <TextBlock
+                MaxWidth="720"
+                HorizontalAlignment="Left"
+                Text="测试方式：连接手柄后按 A/B/X/Y，或使用 Enter/Escape/Ctrl+S/Delete，也可以直接点击底部按钮。"
+                TextWrapping="Wrap" />
+            <Border
+                Padding="16"
+                Background="{ThemeResource SystemControlBackgroundChromeMediumLowBrush}">
+                <StackPanel Spacing="8">
+                    <TextBlock Text="最近触发的操作" />
+                    <TextBlock
+                        x:Name="ActionTextBlock"
+                        FontSize="28"
+                        FontWeight="SemiBold"
+                        Text="等待输入" />
+                </StackPanel>
+            </Border>
+        </StackPanel>
+
+        <controls:GamepadCommandBar x:Name="DemoCommandBar" Grid.Row="1">
+            <controls:GamepadCommandBarItem
+                Button="A"
+                Click="ConfirmItem_Click"
+                Key="Enter"
+                Label="A键" />
+            <controls:GamepadCommandBarItem
+                Button="B"
+                Click="BackItem_Click"
+                Key="Escape"
+                Label="B键" />
+            <controls:GamepadCommandBarItem
+                Button="X"
+                Click="SaveItem_Click"
+                Key="S"
+                KeyModifiers="Control"
+                Label="X键" />
+            <controls:GamepadCommandBarItem
+                Button="Y"
+                Click="DeleteItem_Click"
+                Key="Delete"
+                Label="Y键" />
+        </controls:GamepadCommandBar>
+    </Grid>
+</Page>
